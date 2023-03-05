@@ -256,7 +256,7 @@ int main(int argc, const char * argv[])
                 size_tcp = TH_OFF(tcp)*4;
                 size_payload = ntohs(ip->ip_len) - (size_ip + size_tcp);
                 payload = (const u_char *)(packet+SIZE_ETHERNET+size_ip+size_tcp);
-                printf("Payoad: ");
+                printf("Paload: ");
                 print_payload(payload,size_payload);
                 printf("\n");
 
@@ -273,7 +273,7 @@ int main(int argc, const char * argv[])
 
                 u_int payload_length;
                 payload = get_payload(packet, &payload_length);
-                printf("Payoad: ");
+                printf("Paload: ");
                 print_payload(payload,payload_length);
                 printf("\n");
 
